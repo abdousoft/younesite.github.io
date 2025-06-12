@@ -1,139 +1,91 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mon Site Éducatif</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Éducatif</title>
   <style>
-    :root {
-      --primary-color: #3367d6;
-      --secondary-color: #f5f5f5;
-      --accent-color: #ffffff;
-      --text-color: #333;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--secondary-color);
-      color: var(--text-color);
-      line-height: 1.6;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
     }
-
     header {
-      background-color: var(--primary-color);
-      color: var(--accent-color);
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    nav {
+      background-color: rgb(231, 234, 241);
+      padding: 1rem 2rem;
       display: flex;
-      justify-content: center;
-      background: #2249a0;
-      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     }
-
     nav a {
-      color: white;
+      margin: 0 1rem;
       text-decoration: none;
-      padding: 15px 20px;
-      transition: background 0.3s;
+      color: #333;
+      font-weight: bold;
     }
-
     nav a:hover {
-      background-color: #18377f;
+      text-decoration: underline;
     }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
+    main {
+      padding: 2rem;
     }
-
     section {
-      background: white;
-      margin-bottom: 20px;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 3rem;
+      background-color: rgb(231, 234, 241);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
-
-    section h2 {
-      color: var(--primary-color);
-      margin-bottom: 10px;
-    }
-
     footer {
       text-align: center;
-      padding: 20px;
-      background-color: #ddd;
-      font-size: 14px;
-      color: #555;
-    }
-
-    @media (max-width: 600px) {
-      nav a {
-        flex: 1 0 100%;
-        text-align: center;
-        border-top: 1px solid #18377f;
-      }
+      padding: 1rem;
+      background-color: rgb(231, 234, 241);
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Bienvenue sur Mon Site Éducatif</h1>
-    <p>Un espace interactif pour apprendre et s'amuser</p>
+    <h1>Site Éducatif</h1>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#cours">Cours</a>
+      <a href="#activites">Activités</a>
+      <a href="#exercices">Exercices interactifs</a>
+      <a href="#apropos">À propos</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#accueil">Accueil</a>
-    <a href="#cours">Cours</a>
-    <a href="#activites">Activités</a>
-    <a href="#exercices">Exercices interactifs</a>
-    <a href="#apropos">À propos</a>
-  </nav>
-
-  <div class="container">
-
+  <main>
     <section id="accueil">
       <h2>Accueil</h2>
-      <p>Bienvenue ! Ce site propose des cours, des activités ludiques et des exercices interactifs pour tous les niveaux.</p>
+      <p>Bienvenue sur notre plateforme éducative moderne et interactive.</p>
     </section>
 
     <section id="cours">
       <h2>Cours</h2>
-      <p>Retrouve ici des leçons organisées par thème et niveau. Les cours sont clairs, illustrés et conçus pour faciliter l'apprentissage.</p>
+      <p>Accédez à une variété de cours organisés par matière et niveau.</p>
     </section>
 
     <section id="activites">
       <h2>Activités</h2>
-      <p>Découvre des jeux éducatifs, des défis de logique et des quiz pour renforcer tes connaissances tout en t'amusant.</p>
+      <p>Participez à des activités ludiques pour renforcer vos connaissances.</p>
     </section>
 
     <section id="exercices">
       <h2>Exercices interactifs</h2>
-      <p>Teste tes compétences avec des exercices en ligne corrigés automatiquement. Idéal pour s’entraîner à tout moment.</p>
+      <p>Testez vos compétences avec des exercices corrigés en temps réel.</p>
     </section>
 
     <section id="apropos">
       <h2>À propos</h2>
-      <p>Ce site est conçu par un passionné de pédagogie numérique. Pour toute question ou suggestion, n'hésitez pas à nous contacter.</p>
+      <p>Découvrez qui nous sommes et notre mission pédagogique.</p>
     </section>
-
-  </div>
+  </main>
 
   <footer>
-    &copy; 2025 Mon Site Éducatif – Tous droits réservés.
+    <p>&copy; 2025 Site Éducatif. Tous droits réservés.</p>
   </footer>
-
 </body>
 </html>
-
